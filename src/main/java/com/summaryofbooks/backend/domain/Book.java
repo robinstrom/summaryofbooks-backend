@@ -2,16 +2,26 @@ package com.summaryofbooks.backend.domain;
 
 public class Book {
 
+    private Long id;
     private String title;
     private String author;
     private String image;
     private String summary;
 
-    public Book(String title, String author, String image, String summary) {
+    public Book(Long id, String title, String author, String image, String summary) {
+        this.id = id;
         this.title = title;
         this.author = author;
         this.image = image;
         this.summary = summary;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {

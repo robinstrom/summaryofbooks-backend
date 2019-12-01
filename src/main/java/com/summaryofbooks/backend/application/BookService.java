@@ -28,6 +28,7 @@ public class BookService {
             List<BookEntity> bookEntities = bookRespository.findAll();
             logger.info("Successfully fetched books form DB");
             return bookEntities.stream().map(book -> new Book(
+                    book.getId(),
                     book.getTitle(),
                     book.getAuthor(),
                     book.getImage(),

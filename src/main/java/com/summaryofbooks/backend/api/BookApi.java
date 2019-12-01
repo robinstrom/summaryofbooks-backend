@@ -3,6 +3,7 @@ package com.summaryofbooks.backend.api;
 import com.summaryofbooks.backend.application.BookService;
 import com.summaryofbooks.backend.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,8 +28,9 @@ public class BookApi {
     }
 
     @RequestMapping(path = "/books", method = RequestMethod.POST)
-    public ResponseEntity addBook(@RequestBody Book book) {
+    public HttpStatus addBook(@RequestBody Book book) {
         bookService.addBook(book);
-        return ResponseEntity.ok().build();
+        return HttpStatus.OK;
     }
+
 }

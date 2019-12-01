@@ -1,0 +1,3 @@
+INSERT INTO books (title, author, image, summary) VALUES ('Harry Potter and the philosophers stone', 'J.K Rowling', 'https://images.rapgenius.com/5580cc860bb34f93859136695f2c46fd.667x1000x1.jpg', 'A young boy all of a sudden get to know he is a wizard, and go to wizard school');
+INSERT INTO books (title, author, image, summary) VALUES ('I.T', 'Stephen King', 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4736/9781473666948.jpg', 'Scary clown that eat children.');
+INSERT INTO books (title, author, image, summary) VALUES ('The Da Vinci Code', 'Dan Brown', 'https://images-na.ssl-images-amazon.com/images/I/91Q5dCjc2KL.jpg', 'Professor Robert Langdon gets drawn into a spiral of chaos.');
