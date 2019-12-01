@@ -1,0 +1,8 @@
+CREATE TABLE books (
+    id   LONG      NOT NULL AUTO_INCREMENT,
+    title VARCHAR(128) NOT NULL,
+    author VARCHAR(128) NOT NULL,
+    image VARCHAR(128) NOT NULL,
+    summary VARCHAR(128) NOT NULL,
+    PRIMARY KEY (id)
+);
